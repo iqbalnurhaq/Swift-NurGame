@@ -14,6 +14,10 @@
 		6EC048D9291731E300C76768 /* NurGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC048D8291731E300C76768 /* NurGameTests.swift */; };
 		6EC048E3291731E300C76768 /* NurGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC048E2291731E300C76768 /* NurGameUITests.swift */; };
 		6EC048E5291731E300C76768 /* NurGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC048E4291731E300C76768 /* NurGameUITestsLaunchTests.swift */; };
+		6EC048F52917699600C76768 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC048F42917699600C76768 /* Game.swift */; };
+		6EC048FB29177D2500C76768 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC048FA29177D2500C76768 /* ApiService.swift */; };
+		6EC048FD29177DCA00C76768 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC048FC29177DCA00C76768 /* ApiError.swift */; };
+		6EC049012917828600C76768 /* GameFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC049002917828600C76768 /* GameFetch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		6EC048DE291731E300C76768 /* NurGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NurGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC048E2291731E300C76768 /* NurGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurGameUITests.swift; sourceTree = "<group>"; };
 		6EC048E4291731E300C76768 /* NurGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6EC048F42917699600C76768 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		6EC048FA29177D2500C76768 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		6EC048FC29177DCA00C76768 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		6EC049002917828600C76768 /* GameFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFetch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		6EC048C6291731E200C76768 /* NurGame */ = {
 			isa = PBXGroup;
 			children = (
+				6EC048F3291733CA00C76768 /* view */,
+				6EC048F2291733C200C76768 /* network */,
+				6EC048F1291733BD00C76768 /* model */,
 				6EC048C7291731E200C76768 /* NurGameApp.swift */,
 				6EC048C9291731E200C76768 /* ContentView.swift */,
 				6EC048CB291731E300C76768 /* Assets.xcassets */,
@@ -125,6 +136,31 @@
 				6EC048E4291731E300C76768 /* NurGameUITestsLaunchTests.swift */,
 			);
 			path = NurGameUITests;
+			sourceTree = "<group>";
+		};
+		6EC048F1291733BD00C76768 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6EC048F42917699600C76768 /* Game.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6EC048F2291733C200C76768 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				6EC048FA29177D2500C76768 /* ApiService.swift */,
+				6EC048FC29177DCA00C76768 /* ApiError.swift */,
+				6EC049002917828600C76768 /* GameFetch.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		6EC048F3291733CA00C76768 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EC048CA291731E200C76768 /* ContentView.swift in Sources */,
+				6EC048FB29177D2500C76768 /* ApiService.swift in Sources */,
+				6EC049012917828600C76768 /* GameFetch.swift in Sources */,
+				6EC048F52917699600C76768 /* Game.swift in Sources */,
 				6EC048C8291731E200C76768 /* NurGameApp.swift in Sources */,
+				6EC048FD29177DCA00C76768 /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
